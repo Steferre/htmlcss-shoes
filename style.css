@@ -10,6 +10,35 @@
     position: relative;
 }
 
+/*zona bottoni per la scelta*/
+.choice-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.choice-btn > ul, li {
+    list-style: none;
+    display: inline-block;
+}
+
+li:nth-child(2) {
+    padding: 0 20px;
+}
+
+li a {
+    background-color: #FFFFFF;
+    padding: 11.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 50%;
+}
+
+
+/*zona colori pagine e lettere*/
 .red {
     background-color: #FF0000;
     color: #FFFF00;
@@ -25,8 +54,16 @@
     color: #008000;
 }
 
+/*zona centartura immagini e scritte*/
 .box > * {
    width: 100%; 
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .spot {
@@ -37,10 +74,4 @@
     font-size: 40px;
 }
 
-.box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
